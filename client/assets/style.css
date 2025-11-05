@@ -4,6 +4,11 @@ html,body {
     padding: 0;
 }
 
+body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .bg {
     position: fixed;
     top: 0;
@@ -29,3 +34,123 @@ html,body {
     background-size: cover;
     z-index: -1;
 }
+
+.title-tagline-box, .login-box {
+    flex: 1;
+}
+
+.title-tagline {
+    font-family: "Lalezar", sans-serif;
+    margin: 0;
+    padding: 2.25rem;
+    color: white;
+    top: 0;
+    left: 0;
+    display: flex; 
+    gap: 1rem;
+}
+
+.title-tagline img {
+    height: 8rem;
+}
+
+.title-tagline > * {
+    margin: 0;
+}
+
+.title-tagline h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+.title-tagline p {
+    font-family: "Khula", sans-serif;
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+.login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-form {
+    padding: 2rem;
+    background-color: white;
+    width: min(400px, 80%);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-sizing: border-box;
+
+    height: auto;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+
+.login-form h1 {
+    font-family: "Lalezar", sans-serif;
+    margin: 0;
+}
+
+.form-box p {
+    text-align: center;
+    margin: 0; /* Remove default <p> margins */
+}
+
+.form-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    width: 100%;
+    font-family: "Khula", sans-serif;
+}
+
+.form-box input, button {
+    border-radius: 1rem;
+    font-family: "Khula", sans-serif;
+    border: 1px solid var(--muted-color);
+}
+
+.form-box input {
+    box-sizing: border-box;
+    padding: 0rem;
+    height: 50px;
+    width: 100%;
+    padding-left: 1rem;
+}
+
+
+.form-box button.continue {
+    background-color: var(--highlight-color);
+    border: none;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    padding: 1em; 
+    height: 50px; 
+    font-size: 1rem;
+}
+
+.form-box button.google {
+    padding: 1rem;
+    background-color: white;
+    color: #333;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.form-box button.google img {
+    width: 18px;
+    height: 18px;
+}
+
+ 
